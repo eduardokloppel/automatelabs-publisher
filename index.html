@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AutomateLabs Publisher</title>
+<style>
+  :root { --bg:#0d0d0f; --fg:#f2f2f2; --mut:#a0a0a8; --acc:#e8446a; --card:#17171b; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--fg); font:16px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif; padding:48px 20px; }
+  main { max-width:720px; margin:0 auto; }
+  h1 { font-size:32px; letter-spacing:-.5px; margin-bottom:8px; }
+  p.sub { color:var(--mut); margin-bottom:36px; }
+  h2 { font-size:19px; margin:32px 0 10px; }
+  p { color:#d8d8dc; margin-bottom:12px; }
+  ul { margin:0 0 12px 20px; color:#d8d8dc; }
+  li { margin-bottom:6px; }
+  .card { background:var(--card); border:1px solid #26262c; border-radius:12px; padding:22px; margin:28px 0; }
+  a { color:var(--acc); }
+  nav { margin-top:36px; display:flex; gap:16px; flex-wrap:wrap; }
+  nav a { background:var(--card); border:1px solid #26262c; border-radius:8px; padding:11px 18px; text-decoration:none; }
+  footer { margin-top:48px; color:var(--mut); font-size:14px; border-top:1px solid #26262c; padding-top:20px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>AutomateLabs Publisher</h1>
+  <p class="sub">Internal publishing tool by AutomateLabs (Comexify Consultoria LTDA), Brazil.</p>
+
+  <div class="card">
+    <h2 style="margin-top:0">What this application does</h2>
+    <p>AutomateLabs Publisher is an internal tool that our team uses to upload our own
+    marketing videos to our own TikTok account. Videos are produced in our internal video
+    pipeline, then sent to TikTok as drafts so a member of our team can review and publish
+    them from the TikTok app.</p>
+    <p>It is not a public product. There is no sign up, and it serves only accounts owned by
+    AutomateLabs and its founder.</p>
+  </div>
+
+  <h2>How the TikTok integration is used</h2>
+  <ul>
+    <li><strong>Login Kit</strong> (<code>user.info.basic</code>): to authenticate the account
+    owner and confirm which TikTok account will receive the upload.</li>
+    <li><strong>Content Posting API</strong> (<code>video.upload</code>): to send a finished
+    video file to that account's drafts. Publishing is completed by a human inside TikTok.</li>
+  </ul>
+
+  <nav>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms of Service</a>
+  </nav>
+
+  <footer>
+    AutomateLabs, trade name of Comexify Consultoria LTDA, CNPJ 50.628.674/0001-03,
+    Santa Catarina, Brazil. Contact: eduardo@automatelabs.tech
+  </footer>
+</main>
+</body>
+</html>
